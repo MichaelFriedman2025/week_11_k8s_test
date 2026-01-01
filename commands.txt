@@ -103,3 +103,11 @@ git checkout main
 git merge check_logs
 
 git push 
+
+minikube logs streamlit
+
+git add .
+
+git commit -m "adding one commend"
+
+git push
