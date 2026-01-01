@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: streamlit
+spec:
+  containers:
+  - name: streamlit
+    image: michaelfriedman1/streamlit_test:v1
+    ports:
+    - containerPort: 8080

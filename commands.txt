@@ -19,3 +19,21 @@ docker images
 docker run -d  -p 8000:8501 michaelfriedman1/streamlit_test:v1
 
 docker push michaelfriedman1/streamlit_test:v1
+
+git add .
+
+git commit -m "completed docker file"
+
+git checkout main 
+
+git merge Dokerfile
+
+git checkout -b pod_yaml
+
+git add .
+
+git commit -m "the pod.yaml completed"
+
+git checkout main 
+
+git merge pod_yaml
