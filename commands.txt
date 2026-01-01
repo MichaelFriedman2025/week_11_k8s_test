@@ -87,3 +87,19 @@ git commit -m "the screenshot.md completed"
 git checkout main 
 
 git merge screenshot
+
+git checkout -b check_logs 
+
+kubectl describe pod
+
+minikube logs 
+
+git add .
+
+git commit -m "completed the checks"
+
+git checkout main 
+
+git merge check_logs
+
+git push 
