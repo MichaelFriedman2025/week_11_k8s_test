@@ -47,3 +47,13 @@ git commit -m "changeing the docker file"
 git checkout main 
 
 git merge change
+
+git checkout -b service_yaml
+
+git add .
+
+git commit -m "the service.yaml completed"
+
+git checkout main 
+
+git merge service_yaml
