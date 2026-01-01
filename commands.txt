@@ -57,3 +57,19 @@ git commit -m "the service.yaml completed"
 git checkout main 
 
 git merge service_yaml
+
+git checkout -b run_the_app
+
+kubectl apply -f pod.yaml 
+
+kubectl apply -f service.yaml
+
+minikube service streamlit-service --url 
+
+git add .
+
+git commit -m "changeing the YAML files"
+
+git checkout main 
+
+git merge run_the_app
