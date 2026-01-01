@@ -2,3 +2,20 @@
 
 minikube start
 minikube status
+
+git add . 
+git commit -m "adding empty files"
+git checkout -b dev
+git checkout -b Dokerfile
+
+python -m venv .venv
+ .\.venv\Scripts\Activate  
+pip install -r .\requirements.txt
+
+docker build -t michaelfriedman1/streamlit_test:v1 .
+
+docker images
+
+docker run -d  -p 8000:8501 michaelfriedman1/streamlit_test:v1
+
+docker push michaelfriedman1/streamlit_test:v1
